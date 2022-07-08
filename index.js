@@ -1,12 +1,16 @@
 const nodejieba = require("nodejieba");
 let nodeJiebaLoaded = false;
 
-function separateChineseWords(text) {
+/**
+ @param {string} text 
+ @param {{ dictPath: string, userDictPath: string } | undefined} options 
+ */
+function separateChineseWords(text, options) {
   if (!nodeJiebaLoaded) {
     nodejieba.load({
       // Compiled to use traditional characters to
-      dict: `${__dirname}/dict/jieba.dict.utf8`,
-      userDict: `${__dirname}/dict/user.dict.utf8`,
+      dict: options?.dictPath ?? `${__dirname}/dict/jieba.dict.utf8`,
+      userDict: options?.userDictPath ?? `${__dirname}/dict/user.dict.utf8`,
     });
     nodeJiebaLoaded = true;
   }

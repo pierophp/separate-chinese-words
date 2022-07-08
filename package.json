@@ -1,11 +1,12 @@
 {
   "name": "separate-chinese-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "test:debug": "node test/index.js"
+    "test:debug": "node test/index.js",
+    "types": "tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/pierophp/separate-chinese-words#readme",
   "dependencies": {
     "nodejieba": "^2.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
   }
 }
