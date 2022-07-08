@@ -1,9 +1,9 @@
 export default separateChineseWords;
 /**
  @param {string} text
- @param {{dictPath: string, userDictPath: string} | undefined} options
+ @param {{ dictPath: string, userDictPath: string }=} options
  */
-export function separateChineseWords(text: string, options: {
+export function separateChineseWords(text: string, options?: {
     dictPath: string;
     userDictPath: string;
 } | undefined): string[];

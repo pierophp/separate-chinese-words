@@ -3,7 +3,7 @@ let nodeJiebaLoaded = false;
 
 /**
  @param {string} text 
- @param {{ dictPath: string, userDictPath: string } | undefined} options 
+ @param {{ dictPath: string, userDictPath: string }=} options 
  */
 function separateChineseWords(text, options) {
   if (!nodeJiebaLoaded) {
