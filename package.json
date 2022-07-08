@@ -1,0 +1,23 @@
+{
+  "name": "separate-chinese-words",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "test:debug": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierophp/separate-chinese-words.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierophp/separate-chinese-words/issues"
+  },
+  "homepage": "https://github.com/pierophp/separate-chinese-words#readme",
+  "dependencies": {
+    "nodejieba": "^2.6.0"
+  }
+}
